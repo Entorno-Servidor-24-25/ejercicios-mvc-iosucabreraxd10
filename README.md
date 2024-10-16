@@ -8,7 +8,7 @@
 ### Pregunta 2: ¿Qué camino sigue el código cuando el usuario introduce datos en el formulario?
 **Descripción**: Detalla el proceso desde que el usuario envía el formulario hasta que se guarda la información y se muestra una respuesta en pantalla.
 
-
+**Respuesta**: Como `UserController.php` guarda la ruta de `db.php` y `User.php`, se conecta y guarda el usuario en la base de datos. Despues carga `userSuccess.php` y las variables se sustituyen por los datos de la base de datos.
 
 ### Ejercicio 1: Mostrar Todos los Usuarios
 **Descripción**: Extiende la funcionalidad de la aplicación para que se muestre una lista de todos los usuarios que están en la base de datos.
