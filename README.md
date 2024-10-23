@@ -16,6 +16,8 @@
 - Crear una nueva vista `showUsers.php` para mostrar una tabla con los nombres de los usuarios.
 > **Nota:** Al crear nuevas vistas, añade alguna forma de navegar entre ellas de modo que el usuario pueda acceder a todas las vistas sin tener que modificar la URL directamente.
 
+
+
 ### Ejercicio 2: Eliminar Usuario
 **Descripción**: Implementa la funcionalidad para eliminar un usuario de la base de datos.
 - Crear un método `deleteUser()` en `UserController`.

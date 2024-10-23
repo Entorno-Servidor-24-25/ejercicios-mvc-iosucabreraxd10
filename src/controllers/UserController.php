@@ -2,8 +2,8 @@
 // Cargar el modelo de usuario y la conexión a la base de datos
 require_once BASE_PATH . '/models/User.php';
 require_once BASE_PATH . '/db.php';
-
 class UserController {
+    
     // Método para mostrar el formulario
     public function showForm() {
         // Cargar la vista del formulario
@@ -27,5 +27,10 @@ class UserController {
         } else {
             echo "Error al guardar el usuario.";
         }
+    }    
+    public function getAllUsers(){
+        global $connection;
+        $users = User::getAll($connection);
+        require_once BASE_PATH . '/views/userList.php';
     }
 }
