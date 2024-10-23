@@ -18,4 +18,18 @@ class User {
             return false;
         }
     }
+    public static function getAll($connection){
+        $sql = "SELECT name FROM Usuario";
+        $result = $connection -> query($sql);
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                $users[] = $row["name"];
+            }
+            return $users;
+          }
+    }
+    public function Delete($connection){
+        $sql = "DELETE * FROM Usuario WHERE";
+        $result = $connection -> query($sql);
+    }
 }

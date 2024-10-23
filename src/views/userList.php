@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Created</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>User Created Successfully!</h1>
-    <p>Name: <?php echo htmlspecialchars($user->name); ?></p>
+    <h1>Lista de los usuarios</h1>
+        <?php
+        foreach ($users as $user) {
+            echo "$user, ";
+        }
+        ?>
+        <br>
     <a href="index.php">Create Another User</a>
-    <a href="allUsers.php">Ver todos los usuarios</a>
-
 </body>
 </html>
